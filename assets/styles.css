@@ -39,3 +39,15 @@ body {
     font-weight: 500;
     color: #343a40;
 }
+
+.poster {
+    background-image: url("https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.0-9/70282374_2403712976411416_1507897145712181248_o.jpg?_nc_cat=110&_nc_sid=e3f864&_nc_ohc=rr275vilKx8AX8XZTl9&_nc_ht=scontent.fsgn5-5.fna&oh=ec4e9f14cb85b9a7eb392eecfb51d48a&oe=5FB38FC9");
+    background-size: cover;
+    background-position: center;
+}
+
+.poster .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(39, 99, 155) 25%, rgba(255, 255, 255, 0));
+}
