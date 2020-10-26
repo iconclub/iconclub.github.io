@@ -42,18 +42,18 @@
                 <ul class="navbar-nav ml-auto py-4 py-md-0">
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
-                    <div class="dropdown-menu">
+                    <!-- <div class="dropdown-menu">
                       <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
                       <a class="dropdown-item" href="#">Something else here</a>
                       <a class="dropdown-item" href="#">Another action</a>
-                    </div>
+                    </div> -->
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#">Timeline</a>
+                    <a class="nav-link" href="#timeline">Timeline</a>
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 flex">
                     <div id="switch">
@@ -80,7 +80,7 @@
     </div>
   </section>
   
-  <section class="timeline">
+  <section class="timeline" id="timeline">
     <ul>
       <li>
         <div>
@@ -147,10 +147,10 @@
       </li>
     </ul>
   </section>
-  <main>
+  <div class="contact" id="contact">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 d-none d-lg-block">
+      <div class="row flexDisplay flexCenter">
+        <div class="col-lg-4 d-none d-lg-block contact__card">
           <h5>Theo dõi fanpage</h5>
           <div class="embed-responsive embed-responsive-1by1">
             <iframe class="embed-responsive-item"
@@ -159,6 +159,8 @@
               allowTransparency="true" allow="encrypted-media"></iframe>
           </div>
           <hr>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
           <h5>Tham gia cộng đồng Discord</h5>
           <div class="embed-responsive embed-responsive-1by1">
             <iframe class="embed-responsive-item" src="https://discord.com/widget?id=753813980723544175&theme=light"
@@ -168,9 +170,10 @@
         </div>
       </div>
     </div>
-  </main>
-  <footer>
 
+  </div>
+  <footer class="footer">
+    <span>Copyright by ICON Club &copy;</span>
   </footer>
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
@@ -188,14 +191,14 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Your Chat Plugin code -->
   <div class="fb-customerchat" attribution=setup_tool page_id="2074049382711112" theme_color="#0A7CFF"
     logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?"
     logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?">
   </div>
-
 
   <script src="./script/hero.js"></script>
   <script src="./script/timeline.js"></script>

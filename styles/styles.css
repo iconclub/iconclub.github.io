@@ -8,6 +8,38 @@ body {
     align-items: center;
 }
 
+.flexDisplay {
+    display: flex;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+
+.blackFont {
+    color: black;
+}
+
+.contact {
+    background-color: var(--liColor);
+    color: var(--liColor);
+}
+
+.contact__card {
+    display: flex;
+}
+
+.footer {
+    padding: 1em;
+    text-align: center;
+    color: hsl(240, 10%, 50%);
+    font-size: 1.5em;
+}
 
 
 /* ::-webkit-scrollbar {
