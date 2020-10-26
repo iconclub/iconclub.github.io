@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   --liColor: #0964b4;
+  --borderRadius: 3px;
+  --darkColor: #1f2029;
 }
 
 body {
@@ -39,7 +41,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: white;
+  
   padding: 50px 0;
 }
 
@@ -50,6 +52,14 @@ body {
   margin: 0 auto;
   padding-top: 50px;
   background: hsl(240, 90%, 10%);
+}
+
+.whiteBar {
+    background: #fff !important;
+}
+
+.darkList {
+    background-color: --darkColor;
 }
 
 .timeline ul li::after {
@@ -170,3 +180,5 @@ time {
     border-color: transparent var(--liColor) transparent transparent;
   }
 }
+
+/* Glowing */

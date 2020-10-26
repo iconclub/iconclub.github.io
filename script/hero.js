@@ -37,10 +37,14 @@
 		if ($("body").hasClass("dark")) {
 			$("body").removeClass("dark");
 			$("#switch").removeClass("switched");
+			$(".timeline ul").removeClass("darkList");
+			$(".timeline ul li").removeClass("whiteBar");
 		}
 		else {
 			$("body").addClass("dark");
 			$("#switch").addClass("switched");
+			$(".timeline ul li").addClass("whiteBar");
+			$(".timeline ul").addClass("darkList");
 		}
 	});  
 	
