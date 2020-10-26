@@ -4,6 +4,28 @@
   
     // define variables
     var items = document.querySelectorAll(".timeline li");
+    var date = new Date();
+    
+    const toShortDate = (date) => {
+      let regex = /^\d{2}\/\d{2}\/\d{4}/;
+      if ( date.match(regex) ) {
+        let parts = date.split("/");
+        return Date.parse(`${parts[1]}/${parts[0]}/${parts[2]}`);
+      }
+      return false;
+    }
+    
+    items.forEach((item) => {
+      let timeContent = item.querySelector("div time").textContent;
+      let timeDates = timeContent.split(" - ");
+      let beginDate = toShortDate(timeDates[0])
+      let endDate = toShortDate(timeDates[1])
+      if ( beginDate && endDate ) {
+        if ( date.getTime() > beginDate && date.getTime() < endDate ) {
+          item.querySelector("div").classList.add("gradient-border");
+        }
+      }
+    })
   
     // check if an element is in viewport
     function isElementInViewport(el) {
@@ -28,5 +50,9 @@
     window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
+
+
   
-  })();
+})();
+
+
