@@ -1,0 +1,54 @@
+body {
+    padding-top: 56px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexDisplay {
+    display: flex;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+
+.blackFont {
+    color: black;
+}
+
+.contact {
+    background-color: var(--liColor);
+    color: var(--liColor);
+}
+
+.contact__card {
+    display: flex;
+}
+
+.footer {
+    padding: 1em;
+    text-align: center;
+    color: hsl(240, 10%, 50%);
+    font-size: 1.5em;
+}
+
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+end of Timeline */
+
+

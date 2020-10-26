@@ -14,139 +14,143 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/timeline.css">
+
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand navbar-light fixed-top bg-light">
+  <!-- Hero -->
+  <div class="hero-anime">	
+    <div class="navigation-wrap bg-light start-header start-style">
       <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="/assets/logo.png" alt="logo" height="32" width="32">
-          <span class="text-muted">
-            ICON CLUB
-          </span>
-        </a>
-        <div>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:icon.acaclub@it.tdt.edu.vn" target="_blank">
-                <i class="fa fa-envelope"></i>
-                <span>Mail</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/iconclub.it.tdtu" target="_blank">
-                <i class="fa fa-facebook"></i>
-                <span>Fanpage</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/iconclub" target="_blank">
-                <i class="fa fa-github"></i>
-                <span>Github</span>
-              </a>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+            
+              <a class="navbar-brand"><img src="./assets/logo.png" alt="ICON"></a>	
+              
+              <button class="navbar-toggler" type="button" 
+                data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <!-- <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </div> -->
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="#timeline">Timeline</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 flex">
+                    <div id="switch">
+                      <div id="circle"></div>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </nav>		
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="nav-scroller shadow-sm py-1 mb-2">
-      <div class="container">
-        <nav class="nav nav-underline">
-          <a class="nav-link active" href="#">Trang chủ</a>
-          <a class="nav-link" href="#">Giới thiệu</a>
-          <a class="nav-link" href="#">Link 1</a>
-          <a class="nav-link" href="#">Link 2</a>
-        </nav>
       </div>
     </div>
-  </header>
-  <main>
+    <div class="section full-height">
+      <img src="assets/20_11.jpg" class="section__image">
+    </div>
+  </div>
+  <!-- Timeline-->
+  <section class="intro">
+    <div class="intro__container">
+      <h1>KẾ HOẠCH NĂM HỌC CỦA CLB ICON</h1>
+    </div>
+  </section>
+  
+  <section class="timeline" id="timeline">
+    <ul>
+      <li>
+        <div>
+          <time>19/10/2020 - 15/11/2020</time> 
+          CLB tổ chức một cuộc thi dành cho các sinh viên nhân ngày 20/11. Cuộc thi nhắm đến việc tạo ra một sản phẩm 
+          dạng thiệp dùng HTML, CSS, JS nhằm truyền tải thông điệp đến các thầy cô giáo.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>02/11/2020 - 08/11/2020</time> 
+          Cuộc thi học thuật Find Your Way, một cuộc thi về tư duy, logic, lập trình gồm nhiều vòng thi với các chủ 
+          đề khác nhau nhắm vào các đối tượng <strong>sinh viên năm 1.</strong>
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>26/10/2020 - 01/11/2020</time> 
+          Một buổi Seminar được tổ chức bởi CLB ICON nhằm chia sẻ các phương pháp học tập hiệu quả trong môi trường
+          đại học. Là một buổi trò chuyện, chia sẻ động lực, kinh nghiệm thúc đẩy học tập.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>28/12/2020 - 03/01/20201</time> 
+          Buổi sơ kết kết thúc học kỳ 1 của năm học 2020 - 2021, tổng kết các hoạt động đã diễn ra, ban thưởng đối
+          với những cá nhân có thành tích xuất sắc trong học kỳ, chia sẻ, rút kinh nghiệm cải thiện trong học kỳ tới.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>01/02/2021 - 07/02/2021</time> 
+          Cuộc thi trực tuyến ICON Challenge 3, bao gồm những kiến thức về tư duy, logic, lập trình cơ bản và chuyên 
+          ngành chung CNTT. Nhắm vào các đối tượng sinh viên các khóa trong khoa.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>15/03/2021 - 21/03/2021</time> 
+          Cuộc thi học thuật Recursion, một cuộc thi lớn mà CLB nhắm vào tất cả sinh viên các khóa trong khoa. Bao gồm
+          những kiến thức chung về CNTT và các kiến thức chuyên ngành. Cũng nhằm kỷ niệm ngày thành lập khoa 02/03/2021.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>12/04/2021 - 18/04/2021</time> 
+          Một buổi Seminar hướng dẫn trình bày báo cáo bởi thầy Trần Trung Tín, thông qua buổi này các bạn sinh viên sẽ
+          nắm thêm được kiến thức về cách trình bày và soạn thảo văn bản khoa học.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>19/04/2021 - 25/04/2021</time> 
+          Trong khoảng thời gian này, CLB sẽ đưa các bạn đi cùng trong việc tìm hiểu luật An ninh mạng. Thông qua hình thức 
+          trắc nghiệm, CLB sẽ chia sẻ thêm với các bạn thêm kiến thức về những nội dung này.
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>03/05/2021 - 09/05/2021</time>
+          Trải qua hai học kỳ trong năm học 2020 - 2021, nhân dịp những ngày cuối cùng này, CLB sẽ tổ chức một buổi tổng kết 
+          năm học, nhằm tổng kết những thành tựu đạt được trong năm qua, khen thưởng cho những cá nhân xuất sắc.
+        </div>
+      </li>
+    </ul>
+  </section>
+  <div class="contact" id="contact">
     <div class="container">
-      <div class="poster rounded">
-        <div class="overlay jumbotron p-4 p-md-5 text-white rounded">
-          <div class="col-lg-6 px-0">
-            <h1 class="display-4 font-italic">Hello, World!</h1>
-            <p class="lead my-3">Câu lạc bộ học thuật iCON thuộc khoa CNTT trường Đại học Tôn Đức Thắng thành lập nhằm
-              tổ chức môi trường học tập, giải đáp, chia sẻ các kiến thức cho các bạn sinh viên trong lẫn ngoài CLB.</p>
-            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8">
-          <h5>Timeline</h5>
-          <div style="height: 350px;background-color: rgb(255, 255, 255);overflow-y: scroll;">
-            <ul class="timeline">
-              <li>
-                <a href="#">Tuyển thành viên</a>
-                <a href="#" class="float-right">17/08/2020 - 23/08/2020</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et
-                  elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales
-                  vehicula....
-                </p>
-              </li>
-              <li>
-                <a href="#">Seminar Phương pháp học tập</a>
-                <a href="#" class="float-right">31/10/2020</a>
-                <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae
-                  justo
-                  accumsan, sed semper nisi sollicitudin...</p>
-              </li>
-              <li>
-                <a href="#">Cuộc thi học thuật Find Your Way</a>
-                <a href="#" class="float-right">7/12/2020 - 13/12/2020</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-              <li>
-                <a href="#">Sơ kết hoạt động Câu lạc bộ</a>
-                <a href="#" class="float-right">28/12/2020 - 03/01/2021</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-              <li>
-                <a href="#">Seminar Định hướng nghè nghiệp trong thời đại 4.0</a>
-                <a href="#" class="float-right">25/01/2021 - 31/01/2021</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-              <li>
-                <a href="#">Cuộc thi online ICON Challenge 3</a>
-                <a href="#" class="float-right">01/02/2021 - 07/02/2021</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-              <li>
-                <a href="#">Cuộc thi học thuật Recursion</a>
-                <a href="#" class="float-right">15/03/2021 - 21/03/2021</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-              <li>
-                <a href="#">Seminar Hướng dẫn trình bày báo cáo</a>
-                <a href="#" class="float-right">12/04/2021 - 18/04/2021</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-              <li>
-                <a href="#">Cuộc thi online Tìm hiểu về luật an ninh mạng</a>
-                <a href="#" class="float-right">19/04/2021 - 25/04/2021</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-              <li>
-                <a href="#">Tổng kết hoạt động CLB HKII</a>
-                <a href="#" class="float-right">03/05/2021 - 09/05/2021</a>
-                <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae,
-                  mollis pharetra velit. Sed nec tempor nibh...</p>
-              </li>
-            </ul>
-          </div>
-          <hr>
-        </div>
-        <div class="col-lg-4 d-none d-lg-block">
+      <div class="row flexDisplay flexCenter">
+        <div class="col-lg-4 d-none d-lg-block contact__card">
           <h5>Theo dõi fanpage</h5>
           <div class="embed-responsive embed-responsive-1by1">
             <iframe class="embed-responsive-item"
@@ -155,6 +159,8 @@
               allowTransparency="true" allow="encrypted-media"></iframe>
           </div>
           <hr>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
           <h5>Tham gia cộng đồng Discord</h5>
           <div class="embed-responsive embed-responsive-1by1">
             <iframe class="embed-responsive-item" src="https://discord.com/widget?id=753813980723544175&theme=light"
@@ -164,9 +170,10 @@
         </div>
       </div>
     </div>
-  </main>
-  <footer>
 
+  </div>
+  <footer class="footer">
+    <span>Copyright by ICON Club &copy;</span>
   </footer>
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
@@ -184,13 +191,17 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Your Chat Plugin code -->
   <div class="fb-customerchat" attribution=setup_tool page_id="2074049382711112" theme_color="#0A7CFF"
     logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?"
     logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?">
   </div>
+
+  <script src="./script/hero.js"></script>
+  <script src="./script/timeline.js"></script>
 </body>
 
 </html>
