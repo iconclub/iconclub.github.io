@@ -25,6 +25,10 @@ body {
     color: black;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 
 .contact {
     padding-top: 3em;
@@ -40,6 +44,7 @@ body {
     text-align: center;
     font-size: 1.5em;
 }
+
 
 
 /* ::-webkit-scrollbar {
