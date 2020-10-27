@@ -1,6 +1,67 @@
 (function () {
     let members = [
         {
+            id: "51603340",
+            name: "Võ Minh Triết",
+            job: "Cố vấn",
+            desc: "Trưởng nhánh GT 2019 - 2020",
+        }, 
+        {
+            id: "51603310",
+            name: "Nguyễn Toàn Thiện",
+            job: "Cố vấn",
+            desc: "Trưởng nhánh Web 2019 - 2020",
+        },
+        {
+            id: "51603171",
+            name: "Phan Tuấn Kiệt",
+            job: "Cố vấn",
+            desc: "Trưởng nhánh Mobile 2019 - 2020",
+        }, 
+        {
+            id: "51603425",
+            name: "Lê Thị Thùy Trang",
+            job: "Cố vấn",
+            desc: "Quản lý nhân sự 2019 - 2020",
+        }, 
+        {
+            id: "51702068",
+            name: "Trương Nguyễn Ngọc Châu",
+            job: "Cố vấn",
+            desc: "Trưởng CLB ICON 2019 - 2020",
+        }, 
+        {
+            id: "51703008",
+            name: "Nguyễn Trường Giang",
+            job: "Cố vấn",
+            desc: "Trưởng CLB ICON 2019 - 2020",
+        }, 
+        {
+            id: "51702075",
+            name: "Nguyễn Hữu Tấn Đạt",
+            job: "Cố vấn",
+            desc: "Khóa 21",
+        }, 
+        {
+            id: "51703038",
+            name: "Phan Thế An",
+            job: "Cố vấn",
+            desc: "Trưởng nhánh GT 2019 - 2020",
+        }, 
+        {
+            id: "51703107",
+            name: "Đỗ Ngọc Khải",
+            job: "Cố vấn",
+            desc: "Trưởng nhánh GT 2019 - 2020",
+        }, 
+        {
+            id: "51702071",
+            name: "Phạm Quốc Cường",
+            job: "Cố vấn",
+            desc: "Trưởng nhánh Mobile 2019 - 2020",
+        }, 
+        // BCM
+        {
             id: "51800867",
             name: "Nguyễn Trọng Hiếu",
             job: "Trưởng nhánh Giải thuật",
