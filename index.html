@@ -18,10 +18,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="styles/hero.css">
   <link rel="stylesheet" href="styles/timeline.css">
   <link rel="stylesheet" href="styles/profile.css">
+  <link rel="stylesheet" href="styles/styles.css">
 
 </head>
 
@@ -62,10 +65,10 @@
                     </div> -->
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#timeline">Timeline</a>
+                    <a class="nav-link pointer" id="timeline-nav">Timeline</a>
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link pointer" id="contact-nav">Contact</a>
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 flex">
                     <div id="switch">
@@ -103,7 +106,7 @@
       </li>
       <li>
         <div>
-          <time>02/11/2020 - 08/11/2020</time> 
+          <time>02/12/2020 - 08/12/2020</time> 
           Cuộc thi học thuật Find Your Way, một cuộc thi về tư duy, logic, lập trình gồm nhiều vòng thi với các chủ 
           đề khác nhau nhắm vào các đối tượng <strong>sinh viên năm 1.</strong>
         </div>
@@ -219,6 +222,33 @@
   <script src="./script/timeline.js"></script>
   <script src="./script/jquery.mousewheel.min.js"></script>
   <script src="./script/profile.js"></script>
+  <script>
+    let timelineNav = document.getElementById("timeline-nav");
+    let contactNav = document.getElementById("contact-nav");
+
+    let timeline = document.getElementById("timeline");
+
+    const getPosition = (element) => {
+      let clientRect = element.getBoundingClientRect();
+      console.log(clientRect.top, clientRect.left);
+      console.log(document.body.scrollTop, document.body.scrollLeft);
+      return {
+        left: clientRect.left + document.body.scrollLeft,
+        top: clientRect.top + document.body.scrollTop,
+      }
+    }
+    console.log(timelineNav);
+
+    timelineNav.addEventListener("click", (event) => {
+      let position = getPosition(timeline);
+      scrollTo({
+        top: position.top,
+        behavior: "smooth",
+      })
+
+      event.stopPropagation();
+    })
+  </script>
 </body>
 
 </html>
